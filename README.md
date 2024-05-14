@@ -19,6 +19,17 @@ Suggerimenti/Indicazioni:
 Sì, lo sappiamo che esistono le funzioni includes() e indexOf() ma noi non le vogliamo utilizzare 
 per cercare nel frigorifero.
 
+<!-- workflow -->
+<!-- 
+creo un Array con gli elementi che mi sono stati forniti 
+-faccio un Array.push('pesca'); per agiungere l'elemento che ho sul tavolo
+-controllo se dentro l'Array è presente 'cocomero'
+-se e presente stampa "Trovato! Devo solo preparare il cocktail."
+-altrimenti stampa  "Oh no, devo uscire a comprare il cocomero!" 
+-->
+
+
+
 <!-- 2. La coda dell'Array -->
 <!-- Cartella: array_tail -->
 
