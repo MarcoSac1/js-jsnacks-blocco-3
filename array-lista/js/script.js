@@ -8,3 +8,12 @@ console.log(fridgeFruits);
 fridgeFruits.push('pesca');
 // controllo se e stato agiunto
 console.log(fridgeFruits);
+
+// let fruitsearch = prompt('search in your fridge');
+
+// controllo se dentro l'Array è presente 'cocomero'
+if(fridgeFruits.find('cocomero')){
+    connsole.log('Trovato! Devo solo preparare il cocktail.');
+}else{
+    console.log("Oh no, devo uscire a comprare il cocomero!");
+}
