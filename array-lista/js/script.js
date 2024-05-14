@@ -6,20 +6,21 @@ console.log(fridgeFruits);
 
 // agiungo con un push l'elemento 'pesca'
 fridgeFruits.push('pesca');
+
 // controllo se e stato agiunto
 console.log(fridgeFruits);
 
 // controllo se dentro l'Array è presente 'cocomero'
 for (let index = 0; index < fridgeFruits.length; index++) {
     const element = fridgeFruits[index];
+    console.log(element);
     
-    if(element ==['cocomero']){
+    if(element ==='cocomero'){
         console.log('Trovato! Devo solo preparare il cocktail.');
     }else{
         console.log("Oh no, devo uscire a comprare il cocomero!");
     }
     
-    // console.log(element);
 }
 
 
