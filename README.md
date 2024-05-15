@@ -38,6 +38,15 @@ Creiamo  un array chiedendo all'utente quanti elementi dovrà contenere e
 generando tanti numeri casuali (compresi nell'intervallo da 1 a 100) per quanti sono gli elementi da inserire.
 Stampiamo poi gli ultimi 5 elementi dell'Array
 
+<!-- workflow -->
+
+<!-- 
+ dichiaro una variabile dove tramite un prompt faccio inserire al utente il numero di array che vuole generare 
+ creo un controllo sul numero di array
+ creo un ciclo 'for' per generare le stringhe degli array
+ con un console.log stampo gli ultimi 5 elementi del Array
+ -->
+
 <!-- Bonus: -->
 
 Chiediamo all'utente quanti elementi dell'array dovremo stampare

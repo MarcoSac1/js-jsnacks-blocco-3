@@ -1,43 +1,20 @@
-let arrayElement = Number.parseInt(prompt('type an number of element'), 10);
+// dichiaro una variabile dove tramite un prompt faccio inserire al utente il numero di array che vuole generare
+let arrayElements = Number.parseInt(prompt('type an number of elements'), 10);
 let numbersArray = [];
 
-if (Number.isNaN(arrayElement)|| arrayElement > 40 || arrayElement < 5){
-    arrayElement = 15;
+// creo un controllo sul numero di array
+if (Number.isNaN(arrayElements)|| arrayElements > 40 || arrayElements < 5){
+    arrayElements = 15;
 }
 
-for (let index = 0; index < arrayElement.length; index++) {
+// creo un ciclo 'for' per generare le stringhe degli array
+for (let index = 0; index < arrayElements.length; index++) {
     const randomNumber = Math.floor(Math.random() * 100) + 1;
     numbersArray.push(randomNumber);
 }
 
+// con un console.log stampo gli ultimi 5 elementi del Array
 console.log(numbersArray.slice(-5));
 console.log(numbersArray);
 
 
-const shortArray = [1, 2, 3];
-const longArray = [4, 5, 6, 7, 8, 9, 10];
-
-let shortestArray;
-let longestArray;
-
-
-if (shortArray.length === longArray.length){
-    console.log('hanno la stessa lunghezza !');
-}else if(shortArray.length > longArray.length){
-    longestArray = shortArray;
-    shortestArray = longArray;
-}else{
-    longestArray = longArray;
-    shortestArray = shortArray;
-}
-
-const remainigElement = longestArray.length - shortestArray.length;
-
-// for (let index = 0; index <= longestArray.length - shortestArray.length; index++) {
-//     const element = array[index];
-    
-// }
-
-shortestArray.fill(Math.floor(Math.random() * 100) + 1, shortestArray.length, remainigElement);
-
-console.log(shortestArray, longestArray, shortestArray.length, longestArray.length);
