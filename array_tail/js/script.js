@@ -16,5 +16,3 @@ for (let index = 0; index < arrayElements.length; index++) {
 // con un console.log stampo gli ultimi 5 elementi del Array
 console.log(numbersArray.slice(-5));
 console.log(numbersArray);
-
-
