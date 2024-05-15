@@ -1,9 +1,14 @@
-// Crea due array che hanno un numero di elementi diversi. 
-// Aggiungi elementi all'array che ha meno elementi fino a quando ne avrà tanti quanti l'altro.
+// Snack9 
+// Crea un array vuoto. Chiedi fino a che l'array non ha 6 numeri all'utente di inserire un numero,
+//  se è dispari inseriscilo nell'array.
+// const emptyArray = [];
 
-let firstArray = [1, 2, 3, 4, 5, 6];
-let secondArray = [7, 8, 9 ];
 
-while (condition) {
-    
-}
+// while (emptyArray.length < 6){
+//     let userNumber = Number.parseInt(prompt('type a number'), 10);
+// }if(Number.isNaN(userNumber) !== true && userNumber % 2 === 1){
+//     arrayElement.push(userNumber);
+
+// }
+
+// console.log(emptyArray);
