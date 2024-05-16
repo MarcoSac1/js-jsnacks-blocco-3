@@ -1,4 +1,4 @@
-// > Scrivi una funzione che dato un numero inverta le sue cifre: 1234 -> 4321
+> Scrivi una funzione che dato un numero inverta le sue cifre: 1234 -> 4321
 
 
 function reversedNum(number){
@@ -18,5 +18,4 @@ const userNumber = Number.parseInt(prompt('type a number'), 10);
 console.log(userNumber);
 
 console.log(reversedNum(userNumber));
-
 
