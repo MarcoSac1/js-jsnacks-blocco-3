@@ -1,19 +1,22 @@
 // > Scrivi una funzione che dato un numero inverta le sue cifre: 1234 -> 4321
 
-const number = parseFloat(prompt('type a number'), 10);
 
-for (let index = 0; index < number.length; index++) {
-    const number = number.reverse;
+function reversedNum(number){
+    const string = number +'';
+    let reverseString = '';
     
+    for (let index = string.length - 1; index => string.length; index++) {
+        reverseString += string[index];
+        
+    }
+    
+    return Number.parseInt(reverseString , 10);
 }
 
-function num(.reverse(number)){
-    return(num);
-    
-    
-}
 
-console.log(num);
+const userNumber = Number.parseInt(prompt('type a number'), 10);
+console.log(userNumber);
 
+console.log(reversedNum(userNumber));
 
 
