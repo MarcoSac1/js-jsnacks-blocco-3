@@ -5,12 +5,12 @@ function reversedNum(number){
     const string = number +'';
     let reverseString = '';
     
-    for (let index = string.length - 1; index => string.length; index++) {
+    for (let index = string.length - 1; index => 0 ; index--) {
         reverseString += string[index];
         
     }
     
-    return Number.parseInt(reverseString , 10);
+    return Number.parseInt(reverseString, 10);
 }
 
 
