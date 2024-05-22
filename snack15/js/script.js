@@ -5,14 +5,11 @@
 // Attraverso un prompt dare la possibilità all'utente di modificare il peso della palla.
 
 
-const palla =[
-    {
+const palla = {
+        nome : 'palla',
         peso : 10,
-    }
-];
+    };
 
-for (const key in palla) {
-    let pesoUser = prompt('insert wheigth');
-    const element = pesoUser;
-    console.log(palla[key].peso);
-}
+    let pesoUser =(prompt('insert wheigth'));
+    palla.peso = pesoUser;
+    console.log(palla);
