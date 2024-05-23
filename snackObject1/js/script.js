@@ -82,6 +82,47 @@ const automobili = [
     },
 ];
 
-automobili.forEach((element) =>{
-    console.log(element);
+// automobili.forEach((element) =>{
+//     console.log(element);
+// })
+
+const gasoline = automobili.filter((singleAuto)=>{
+    if(singleAuto,alimentazione === 'benzina'){
+        return true;
+    }
+});
+console.log(gasoline);
+
+const diesel = automobili.filter((singleAuto)=>{
+    if(singleAuto,alimentazione === 'diesel'){
+        return true;
+    }
 })
+console.log(diesel);
+
+const other = automobili.filter((singleAuto)=>{
+    if(singleAuto,alimentazione !== 'benzina' && singleAuto,alimentazione !== 'benzina'){
+        return true;
+    }
+})
+
+// // oppure
+// const gasoline = [];
+// const diesel = [];
+// const other = [];
+
+
+// for (let index = 0; index < cars.length; index++) {
+//     const element = array[index];
+//     if(singleAuto,alimentazione === 'benzina'){
+//         gasoline.push(element);
+//     }else if(singleAuto,alimentazione === 'diesel'){
+//         diesel.push(element);
+//     }else{
+//         other.push(element);
+//     }
+// }
+
+// console.log(gasoline);
+// console.log(diesel);
+// console.log(other);
