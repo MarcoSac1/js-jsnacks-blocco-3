@@ -59,13 +59,12 @@ const people = [
 ]
 
 people.forEach((element) =>{
-    console.log(`${element.nome} -- ${element.cognome} `)
+    console.log(`${element.nome} -- ${element.cognome} -- ${element.eta}`)
 
     if(element.eta > 18) {
         console.log('puoi guidare')
 
     }else{
-
         console.log('stay a casa');
     }
 });
