@@ -24,7 +24,7 @@ const people = [
     {
         nome : 'teodora',
         cognome : 'tuono',
-        eta : '22',
+        eta : '11',
     },
     {
         nome : 'franca',
@@ -64,6 +64,8 @@ people.forEach((element) =>{
     if(element.eta > 18) {
         console.log('puoi guidare')
 
+    }else{
+
+        console.log('stay a casa');
     }
-    console.log('stay a casa');
 });
