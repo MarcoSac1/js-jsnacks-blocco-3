@@ -6,64 +6,60 @@
 const zucchine = [
     {
         varieta : 'bianca',
-        peso : 46,
-        lunghezza : 3,
+        peso : '46',
+        lunghezza :'3',
     },
     {
         varieta : 'bianca',
-        peso : 542,
-        lunghezza : 165,
+        peso : '542',
+        lunghezza : '165',
     },
     {
         varieta : 'bianca',
-        peso : 860,
-        lunghezza : 35,
+        peso : '860',
+        lunghezza : '35',
     },
     {
         varieta : 'zucchina chiara di faenza',
-        peso : 20,
-        lunghezza : 2,
+        peso : '20',
+        lunghezza : '2',
     },
     {
         varieta : 'bianca',
-        peso : 505,
-        lunghezza : 215,
+        peso : '505',
+        lunghezza : '215',
     },
     {
         varieta : 'zucchina chiara di faenza',
-        peso : 37,
-        lunghezza : 200,
+        peso : '37',
+        lunghezza : '200',
     },
     {
         varieta : 'bianca',
-        peso : 33,
-        lunghezza : 7,
+        peso : '33',
+        lunghezza : '7',
     },
     {
         varieta : 'zucchina chiara di faenza',
-        peso : 60,
-        lunghezza : 6,
+        peso : '60',
+        lunghezza :'6',
     },
     {
         varieta : 'zucchina chiara di faenza',
-        peso : 520,
-        lunghezza : 11,
+        peso : '520',
+        lunghezza : '11',
     },
     {
         varieta : 'bianca',
-        peso : 20,
-        lunghezza : 5,
+        peso : '20',
+        lunghezza : '5',
     },
 ];
 
-// let sum = 0
-// for (let index = 0; index < zucchine.peso; index++) {
-//     sum += zucchine.peso[index];
-    
-// }
-
-// console.log(sum);
-
+zucchine.forEach((zucchina) =>) {
+    weigt += Number.parseInt(zucchina.peso);
+}
+console.log(weigt);
 
 let zucchinaCorta = zucchine.filter((element) =>{
     if(element.lunghezza < 8){
