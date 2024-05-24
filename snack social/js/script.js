@@ -1,79 +1,38 @@
-// Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza.
-// Calcola quanto pesano tutte le zucchine.
-// Dividi in due array separati le zucchine che misurano meno o più di 8cm.
-// Infine stampa separatamente quanto pesano i due gruppi di zucchine.
+// Un oggetto rappresenta una finestra di un browser e contiene due campi: un array di tab aperte e un numero che indica l'indice della tab aperta nell'array:
 
-const zucchine = [
-    {
-        varieta : 'bianca',
-        peso : '46',
-        lunghezza :'3',
-    },
-    {
-        varieta : 'bianca',
-        peso : '542',
-        lunghezza : '165',
-    },
-    {
-        varieta : 'bianca',
-        peso : '860',
-        lunghezza : '35',
-    },
-    {
-        varieta : 'zucchina chiara di faenza',
-        peso : '20',
-        lunghezza : '2',
-    },
-    {
-        varieta : 'bianca',
-        peso : '505',
-        lunghezza : '215',
-    },
-    {
-        varieta : 'zucchina chiara di faenza',
-        peso : '37',
-        lunghezza : '200',
-    },
-    {
-        varieta : 'bianca',
-        peso : '33',
-        lunghezza : '7',
-    },
-    {
-        varieta : 'zucchina chiara di faenza',
-        peso : '60',
-        lunghezza :'6',
-    },
-    {
-        varieta : 'zucchina chiara di faenza',
-        peso : '520',
-        lunghezza : '11',
-    },
-    {
-        varieta : 'bianca',
-        peso : '20',
-        lunghezza : '5',
-    },
+// {
+//     "tab": ["Facebook", "GitHub", "Gmail"],
+//     "activeTab": 0
+// }
+// {
+//     "tab": ["Twitter", 'Facebook', "GitHub", "Gmail"],
+//     "activeTab": 0
+// }
+
+// Il software deve guardare se c'è un social aperto ed eliminarlo dalle tab.
+// Nel caso la tab fosse attiva, deve attivare la successiva.
+
+
+const browser = {
+    "tab": ["Facebook", "GitHub", "Gmail"],
+    "activeTab": 0
+};
+
+const social = [
+    'facebook',
+    'twitter',
+    'youtube',
 ];
 
-zucchine.forEach((zucchina) =>) {
-    weigt += Number.parseInt(zucchina.peso);
-}
-console.log(weigt);
+const newTab = browser.tab.filter((tabs) => {
+    let isFound = false;
+    social.forEach((social) => {
+        if (social.toLocaleLowerCase() === tabs.toLocaleLowerCase()) {
+            isFound = true;
+            return isFound;
+        }
+    })
+    return !isFound;
+})
 
-let zucchinaCorta = zucchine.filter((element) =>{
-    if(element.lunghezza < 8){
-        return true;
-    }
-});
-
-console.log(zucchinaCorta);
-
-
-let zucchinaLunga = zucchine.filter((element) =>{
-    if(element.lunghezza > 8){
-        return true;
-    }
-});
-
-console.log(zucchinaLunga);
+console.log(newTab);
